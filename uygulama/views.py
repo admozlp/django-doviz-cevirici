@@ -8,7 +8,7 @@ def index(request):
         karsilik = request.POST.get("secondCurrency")
         miktar = request.POST.get("amount")
 
-        url = "http://data.fixer.io/api/latest?access_key=7caee80dd4db707840733fdec1655f7a"
+        url = "http://data.fixer.io/api/latest?access_key=key"
         response = requests.get(url)
         veri = response.json()
 
